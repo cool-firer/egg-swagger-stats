@@ -1,0 +1,67 @@
+{
+  "name": "egg-egg-swagger-stats",
+  "version": "1.0.0",
+  "description": "",
+  "eggPlugin": {
+    "name": "eggSwaggerStats"
+  },
+  "keywords": [
+    "egg",
+    "eggPlugin",
+    "egg-plugin"
+  ],
+  "dependencies": {
+    "basic-auth": "^2.0.1",
+    "cluster-client": "^3.0.1",
+    "prom-client": "^11.5.3",
+    "sdk-base": "^3.6.0",
+    "cookies": "^0.7.1",
+    "debug": "^3.1.0",
+    "moment": "^2.19.3",
+    "natives": "^1.1.6",
+    "path-to-regexp": "^2.1.0",
+    "request": "^2.85.0",
+    "uuid": "^3.1.0"
+  },
+  "devDependencies": {
+    "autod": "^3.0.1",
+    "autod-egg": "^1.1.0",
+    "egg": "^2.16.0",
+    "egg-bin": "^4.11.0",
+    "egg-ci": "^1.11.0",
+    "egg-mock": "^3.21.0",
+    "eslint": "^5.13.0",
+    "eslint-config-egg": "^7.1.0"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "scripts": {
+    "test": "npm run lint -- --fix && egg-bin pkgfiles && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "egg-bin pkgfiles --check && npm run lint && npm run cov",
+    "pkgfiles": "egg-bin pkgfiles",
+    "autod": "autod"
+  },
+  "files": [
+    "app.js",
+    "agent.js",
+    "config",
+    "app"
+  ],
+  "ci": {
+    "version": "8, 10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eggjs/egg-egg-swagger-stats.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eggjs/egg/issues"
+  },
+  "homepage": "https://github.com/eggjs/egg-egg-swagger-stats#readme",
+  "author": "cool-firer",
+  "license": "MIT"
+}
