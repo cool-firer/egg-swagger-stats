@@ -1,4 +1,4 @@
-# egg-egg-swagger-stats
+# egg-swagger-stats
 
 swagger-stats egg插件, 支持cluster模式获取所有metrics.
 

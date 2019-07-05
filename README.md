@@ -1,4 +1,4 @@
-# egg-egg-swagger-stats
+# egg-swagger-stats
 
 swagger-stats plugin for egg, support cluster.
 
