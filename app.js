@@ -1,7 +1,7 @@
 const promClient = require("prom-client");
 const registries = [promClient.Registry.globalRegistry];
 
-const MetricsClient = require('./metrics-client');
+const MetricsClient = require('./app/lib/metrics-client');
 
 
 module.exports = app => {

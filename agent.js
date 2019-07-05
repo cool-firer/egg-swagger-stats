@@ -1,5 +1,5 @@
 // agent.js
-const MetricsClient = require('./metrics-client');
+const MetricsClient = require('./app/lib/metrics-client');
 
 module.exports = agent => {
 
