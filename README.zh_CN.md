@@ -6,7 +6,7 @@ swagger-stats egg插件, 支持cluster模式获取所有metrics.
 ## Install
 
 ```bash
-$ npm i egg-egg-swagger-stats --save
+$ npm i egg-swagger-stats --save
 ```
 
 ## Usage
@@ -15,7 +15,7 @@ $ npm i egg-egg-swagger-stats --save
 // {app_root}/config/plugin.js
 exports.eggSwaggerStats = {
   enable: true,
-  package: 'egg-egg-swagger-stats',
+  package: 'egg-swagger-stats',
 };
 ```
 
