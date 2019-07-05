@@ -1,76 +1,46 @@
 # egg-egg-swagger-stats
 
-[![NPM version][npm-image]][npm-url]
-[![build status][travis-image]][travis-url]
-[![Test coverage][codecov-image]][codecov-url]
-[![David deps][david-image]][david-url]
-[![Known Vulnerabilities][snyk-image]][snyk-url]
-[![npm download][download-image]][download-url]
+swagger-stats egg插件, 支持cluster模式获取所有metrics.
 
-[npm-image]: https://img.shields.io/npm/v/egg-egg-swagger-stats.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/egg-egg-swagger-stats
-[travis-image]: https://img.shields.io/travis/eggjs/egg-egg-swagger-stats.svg?style=flat-square
-[travis-url]: https://travis-ci.org/eggjs/egg-egg-swagger-stats
-[codecov-image]: https://img.shields.io/codecov/c/github/eggjs/egg-egg-swagger-stats.svg?style=flat-square
-[codecov-url]: https://codecov.io/github/eggjs/egg-egg-swagger-stats?branch=master
-[david-image]: https://img.shields.io/david/eggjs/egg-egg-swagger-stats.svg?style=flat-square
-[david-url]: https://david-dm.org/eggjs/egg-egg-swagger-stats
-[snyk-image]: https://snyk.io/test/npm/egg-egg-swagger-stats/badge.svg?style=flat-square
-[snyk-url]: https://snyk.io/test/npm/egg-egg-swagger-stats
-[download-image]: https://img.shields.io/npm/dm/egg-egg-swagger-stats.svg?style=flat-square
-[download-url]: https://npmjs.org/package/egg-egg-swagger-stats
 
-<!--
-Description here.
--->
+## Install
 
-## 依赖说明
+```bash
+$ npm i egg-egg-swagger-stats --save
+```
 
-### 依赖的 egg 版本
-
-egg-egg-swagger-stats 版本 | egg 1.x
---- | ---
-1.x | 😁
-0.x | ❌
-
-### 依赖的插件
-<!--
-
-如果有依赖其它插件，请在这里特别说明。如
-
-- security
-- multipart
-
--->
-
-## 开启插件
+## Usage
 
 ```js
-// config/plugin.js
+// {app_root}/config/plugin.js
 exports.eggSwaggerStats = {
   enable: true,
   package: 'egg-egg-swagger-stats',
 };
 ```
 
-## 使用场景
+## Configuration
 
-- Why and What: 描述为什么会有这个插件，它主要在完成一件什么事情。
-尽可能描述详细。
-- How: 描述这个插件是怎样使用的，具体的示例代码，甚至提供一个完整的示例，并给出链接。
+```js
+// {app_root}/config/config.default.js
+exports.eggSwaggerStats = {
+};
+```
 
-## 详细配置
+see [swaggerstats.io](http://swaggerstats.io/docs.html) for more detail.
 
-请到 [config/config.default.js](config/config.default.js) 查看详细配置项说明。
+## Example
 
-## 单元测试
+```js
+打开浏览器访问以下地址:
+metrics: /host:port/swagger-stats/metrics
+     ui: /host:port/swagger-stats/ui
 
-<!-- 描述如何在单元测试中使用此插件，例如 schedule 如何触发。无则省略。-->
+推荐使用prometheus采集metrics.
+```
 
-## 提问交流
-
-请到 [egg issues](https://github.com/eggjs/egg/issues) 异步交流。
 
 ## License
 
 [MIT](LICENSE)
+
