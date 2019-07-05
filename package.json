@@ -1,6 +1,6 @@
 {
   "name": "egg-swagger-stats",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "eggPlugin": {
     "name": "eggSwaggerStats"
@@ -56,12 +56,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eggjs/egg-swagger-stats.git"
+    "url": "git+https://github.com/cool-firer/egg-swagger-stats"
   },
   "bugs": {
-    "url": "https://github.com/eggjs/egg/issues"
+    "url": "https://github.com/cool-firer/egg-swagger-stats/issues"
   },
-  "homepage": "https://github.com/eggjs/egg-swagger-stats#readme",
+  "homepage": "https://github.com/cool-firer/egg-swagger-stats#readme",
   "author": "cool-firer",
   "license": "MIT"
 }
